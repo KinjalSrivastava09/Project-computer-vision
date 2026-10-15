@@ -1,0 +1,18 @@
+Primary model 34147 parameters
+Epoch 01/10: loss=1.0144 train_acc=0.5348 test_acc=0.6190
+Epoch 02/10: loss=0.7061 train_acc=0.6844 test_acc=0.7338
+Epoch 03/10: loss=0.5123 train_acc=0.7875 test_acc=0.8485
+Epoch 04/10: loss=0.3054 train_acc=0.9121 test_acc=0.9329
+Epoch 05/10: loss=0.1713 train_acc=0.9658 test_acc=0.9762
+Epoch 06/10: loss=0.1010 train_acc=0.9872 test_acc=0.9978
+Epoch 07/10: loss=0.0691 train_acc=0.9878 test_acc=0.9913
+Epoch 08/10: loss=0.0479 train_acc=0.9945 test_acc=0.9957
+Epoch 09/10: loss=0.0386 train_acc=0.9957 test_acc=1.0000
+Epoch 10/10: loss=0.0287 train_acc=0.9969 test_acc=1.0000
+No-pooling ablation 525667 parameters
+Epoch 01/5: loss=0.8685 train_acc=0.5842 test_acc=0.7468
+Epoch 02/5: loss=0.4708 train_acc=0.8284 test_acc=0.8680
+Epoch 03/5: loss=0.2324 train_acc=0.9328 test_acc=0.9545
+Epoch 04/5: loss=0.1180 train_acc=0.9707 test_acc=0.9784
+Epoch 05/5: loss=0.0715 train_acc=0.9811 test_acc=0.9827
+Saved results/metrics.json test accuracy: 1.0

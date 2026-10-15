@@ -1,0 +1,216 @@
+{
+  "experiment": "Synthetic three-shape recognition",
+  "seed": 42,
+  "samples_total": 2100,
+  "train_samples": 1638,
+  "test_samples": 462,
+  "test_counts": [
+    154,
+    154,
+    154
+  ],
+  "image_shape": [
+    1,
+    32,
+    32
+  ],
+  "classes": [
+    "circle",
+    "square",
+    "triangle"
+  ],
+  "epochs": 10,
+  "batch_size": 64,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "train_seconds": 4.131,
+  "model_parameters": 34147,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 1.0143954863769522,
+      "train_accuracy": 0.5347985347985348,
+      "test_accuracy": 0.6190476190476191
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7060903664473649,
+      "train_accuracy": 0.6843711843711844,
+      "test_accuracy": 0.7337662337662337
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.5122814885862581,
+      "train_accuracy": 0.7875457875457875,
+      "test_accuracy": 0.8484848484848485
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.30542030171815293,
+      "train_accuracy": 0.9120879120879121,
+      "test_accuracy": 0.9329004329004329
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.1712564360782486,
+      "train_accuracy": 0.9658119658119658,
+      "test_accuracy": 0.9761904761904762
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.10095225765809908,
+      "train_accuracy": 0.9871794871794872,
+      "test_accuracy": 0.9978354978354979
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.06912868852034593,
+      "train_accuracy": 0.9877899877899878,
+      "test_accuracy": 0.9913419913419913
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.047931001232811896,
+      "train_accuracy": 0.9945054945054945,
+      "test_accuracy": 0.9956709956709957
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.03859981417346641,
+      "train_accuracy": 0.9957264957264957,
+      "test_accuracy": 1.0
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.02872413182142162,
+      "train_accuracy": 0.996947496947497,
+      "test_accuracy": 1.0
+    }
+  ],
+  "test": {
+    "accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        154,
+        0,
+        0
+      ],
+      [
+        0,
+        154,
+        0
+      ],
+      [
+        0,
+        0,
+        154
+      ]
+    ],
+    "classification_report": {
+      "circle": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 154.0
+      },
+      "square": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 154.0
+      },
+      "triangle": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 154.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 462.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 462.0
+      }
+    }
+  },
+  "ablation": {
+    "pooled_params": 34147,
+    "unpooled_params": 525667,
+    "pooled_flatten_features": 1024,
+    "unpooled_flatten_features": 16384,
+    "no_pool_accuracy": 0.9826839826839827,
+    "no_pool_epochs": 5,
+    "no_pool_training_seconds": 2.702
+  },
+  "ablation_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8684990099643759,
+      "train_accuracy": 0.5842490842490843,
+      "test_accuracy": 0.7467532467532467
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.47078912049277216,
+      "train_accuracy": 0.8284493284493285,
+      "test_accuracy": 0.8679653679653679
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.23236090704453005,
+      "train_accuracy": 0.9328449328449329,
+      "test_accuracy": 0.9545454545454546
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.11801910192065478,
+      "train_accuracy": 0.9706959706959707,
+      "test_accuracy": 0.9783549783549783
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.07151293381593748,
+      "train_accuracy": 0.981074481074481,
+      "test_accuracy": 0.9826839826839827
+    }
+  ],
+  "noise_stress_test": [
+    {
+      "noise_std": 0.0,
+      "accuracy": 0.9966666666666667,
+      "n": 300
+    },
+    {
+      "noise_std": 0.075,
+      "accuracy": 0.9966666666666667,
+      "n": 300
+    },
+    {
+      "noise_std": 0.15,
+      "accuracy": 0.92,
+      "n": 300
+    },
+    {
+      "noise_std": 0.25,
+      "accuracy": 0.6866666666666666,
+      "n": 300
+    },
+    {
+      "noise_std": 0.4,
+      "accuracy": 0.6166666666666667,
+      "n": 300
+    }
+  ],
+  "environment": {
+    "torch": "2.10.0+cpu",
+    "numpy": "2.3.5",
+    "device": "cpu"
+  }
+}
